@@ -1,0 +1,4 @@
+1) Chess
+2) XOR
+3) Alyona and Mex
+4) Hash question - queries ? (tr method) 

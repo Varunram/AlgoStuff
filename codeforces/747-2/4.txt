@@ -1,0 +1,25 @@
+lets take the example
+10 6
+2 -5 1 3 0 0 -4 -3 1 0
+
+summer tire
+  if the next element is summer, continue
+  if the next element is winter change
+winter tire
+  remove the next (upd_current_life) elements from array
+  if the remaining array contains no negative numbers, use the same tire
+  else
+    idk
+
+Algo flow:-
+2 - Summer Tire fine
+Next element -5, so change to winter tire
+-5 - Winter tire
+next (6-1) elements are 1 3 0 0 -4
+delete from array and check
+2 -3 1 0
+contains a negative number
+so we can't use the winter tire all along
+so ???change??? (but how do we decide here)
+at 0 , Winter tire is needed for -4
+so change
