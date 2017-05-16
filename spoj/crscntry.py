@@ -1,3 +1,4 @@
+# Works for known test cases, fails on some weird edge case
 def lcs(X , Y):
     m = len(X)
     n = len(Y)
