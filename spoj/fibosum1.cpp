@@ -1,3 +1,4 @@
+// http://codeforces.com/blog/entry/14516
 #include <map>
 #include <iostream>
 using namespace std;
