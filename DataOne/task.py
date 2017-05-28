@@ -27,7 +27,6 @@ def checkMultiString(olddict, newdict, mystr, val, inputArray):
                         checkVal += checkSingleString(olddict, string)
                         del x[x.index(string)]
                         deleted.append(string)
-
             for inputArrays in inputArray:
                 for deletedString in deleted:
                     if inputArrays == deletedString:
@@ -67,9 +66,11 @@ for rows in reader:
 d = collections.OrderedDict(sorted(newdict.items()))
 newdict = d
 inputArray = sys.argv[2:]
+inputArray2 = sys.argv[2:]
 sum1 = 0
-for string in inputArray:
-    sum1 += checkMultiString(olddict, newdict, string, checkSingleString(olddict, string), inputArray)
+for string in inputArray2:
+    pval = checkMultiString(olddict, newdict, string, checkSingleString(olddict, string), inputArray)
+    sum1 += pval
 
 if sum1>10000000000:
     print "Cost Efficient Solution not possible"
